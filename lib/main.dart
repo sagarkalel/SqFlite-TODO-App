@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite_todo_app/pages/home_page_with_bloc.dart';
+import 'package:sqflite_todo_app/pages/home_page_with_cubit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePageWithBloc(),
+      home: const HomePageWithCubit(),
     );
   }
 }
