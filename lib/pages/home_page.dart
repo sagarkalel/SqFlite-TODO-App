@@ -18,7 +18,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(floatingActionButton: _addTaskButton(), body: _taskList());
+    return Scaffold(
+        appBar: AppBar(title: const Text("Home page"), centerTitle: true),
+        floatingActionButton: _addTaskButton(),
+        body: _taskList());
   }
 
   @override

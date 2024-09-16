@@ -20,6 +20,8 @@ class HomePageWithBloc extends StatelessWidget {
       child: Builder(builder: (context) {
         final taskBloc = context.read<TaskBloc>();
         return Scaffold(
+          appBar: AppBar(
+              title: const Text("Home page with bloc"), centerTitle: true),
           floatingActionButton: _addTaskButton(context, taskBloc),
           body: _taskList(),
         );
